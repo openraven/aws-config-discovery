@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: mimir
+openraven:
+  app:
+    v1:
+      resource-discovery:
+        elastic-search-host: elasticsearch-es-http.elasticsearch.svc.cluster.local
+        elastic-search-port: 9200
+        elastic-search-protocol: http
+springdoc:
+  show-actuator: true
+management:
+  health:
+    probes:
+      enabled: true
+    elasticsearch:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics, env, prometheus, mappings, configprops, loggers, conditions
+---
+spring:
+  profiles: local
+openraven:
+  app:
+    v1:
+      resource-discovery:
+        elastic-search-host: localhost
+

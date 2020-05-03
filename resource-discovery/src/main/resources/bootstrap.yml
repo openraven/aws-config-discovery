@@ -1,0 +1,13 @@
+---
+spring:
+  cloud:
+    zookeeper:
+      connect-string: kafka-zookeeper.kafka.svc.cluster.local:2181
+      enabled: true
+---
+spring:
+  profiles: local
+  cloud:
+    zookeeper:
+      enabled: false
+---

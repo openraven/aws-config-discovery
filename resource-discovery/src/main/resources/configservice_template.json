@@ -1,0 +1,36 @@
+{
+  "index_patterns": "aws*",
+  "settings":{
+    "index.mapping.depth.limit": 50
+  },
+  "mappings": {
+    "dynamic_templates": [
+      {
+        "strings_as_keywords": {
+          "match_mapping_type": "string",
+          "path_unmatch": "tags.*",
+          "mapping": {
+            "type": "keyword"
+          }
+        }
+      }
+    ],
+    "properties": {
+      "tags": {
+        "type": "nested"
+      },
+      "configuration": {
+        "type": "object"
+      },
+      "supplementaryConfiguration": {
+        "type": "object"
+      },
+      "relationships": {
+        "type": "nested"
+      },
+      "damp": {
+        "type": "nested"
+      }
+    }
+  }
+}

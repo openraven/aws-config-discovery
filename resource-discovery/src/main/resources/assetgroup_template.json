@@ -1,0 +1,48 @@
+{
+  "index_patterns": "assetgroup",
+  "settings": {
+    "analysis": {
+      "normalizer": {
+        "lowercase_normalizer": {
+          "type": "custom",
+          "char_filter": [],
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "title": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "normalizer": "lowercase_normalizer"
+          }
+        }
+      },
+      "createdBy": {
+        "type": "keyword"
+      },
+      "lastViewed": {
+        "type": "long"
+      },
+      "type": {
+        "type": "keyword"
+      },
+      "query": {
+        "type": "text",
+        "index": false
+      },
+      "assetCounts": {
+        "type": "integer"
+      },
+      "description": {
+        "type": "text"
+      }
+    }
+  }
+}

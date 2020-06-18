@@ -1,7 +1,3 @@
-# Mimir
-[Mimir](https://en.wikipedia.org/wiki/M%C3%ADmir)
-
-
 ## Prerequisites
 
 * AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html

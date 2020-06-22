@@ -1,3 +1,6 @@
+## Please read the core readme first
+https://github.com/openraven/core
+
 ## Prerequisites
 
 * AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html

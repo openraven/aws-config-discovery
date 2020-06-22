@@ -1,5 +1,9 @@
-## Please read the core readme first
+# Please read the core readme first
 https://github.com/openraven/core
+
+# AWS Config Discovery
+
+Service to discover AWS resources using AWS-Config
 
 ## Prerequisites
 

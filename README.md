@@ -1,3 +1,7 @@
+# AWS Config Discovery
+
+Service to discover AWS resources using AWS-Config
+
 ## Prerequisites
 
 * AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
@@ -74,3 +78,7 @@ Happy data spelunking.
 ```console
 $ open http://localhost:5601
 ```
+
+## License
+
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.

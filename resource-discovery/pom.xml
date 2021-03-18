@@ -19,7 +19,7 @@
     <java.version>11</java.version>
     <kotlin.version>1.3.72</kotlin.version>
     <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
-    <elastic-search.version>7.7.0</elastic-search.version>
+    <elastic-search.version>7.11.2</elastic-search.version>
     <sentry.version>1.7.29</sentry.version>
     <logback.version>1.2.3</logback.version>
     <slf4j.version>1.7.29</slf4j.version>
